@@ -1,0 +1,87 @@
+localhost/slim3-application
+
+Required
+===============
+composer - https://getcomposer.org/
+slim - https://github.com/slimphp/Slim
+twig - https://github.com/slimphp/Twig-View
+bootstrap
+jquery
+Eloquent (from Laravel)
+database with test data
+respect validation
+slim csrf - https://github.com/slimphp/Slim-Csrf
+slim flash - https://github.com/slimphp/Slim-Flash
+
+===============
+
+install composer
+download source: https://getcomposer.org/
+
+on your cmd type the command below to check if composer is installed
+>composer
+
+-----------------------------
+our project folder is:- slim3-application
+
+-----------------------------
+so create and navigate to your project folder
+>cd C:\xampp\htdocs\slim3-application
+
+
+install slim 3
+>composer require slim/slim "^3.0"
+
+
+install twig
+>composer require slim/twig-view
+
+add psr-4 in the composer.json file and run the following command
+>composer dump-autoload -o
+
+install Eloquent
+>composer require illuminate/database
+
+
+install respect validation
+>composer require respect/validation
+
+
+install slim csrf
+>composer require slim/csrf
+
+
+install slim flash for showing flash messages
+>composer require slim/flash
+
+
+create the public directory and add the index.php file
+create the bootstrap directory and add the app.php file
+create the app directory and add the routes.php file
+
+create the .htaccess file - turn url rewriting on
+
+clousers
+------------
+$app->get('/',function($request, $response){
+    return "ok";
+});
+
+aoutoload - PSR-4
+------------------
+
+Container
+------------------
+
+
+MVC
+------------------
+
+
+
+
+
+
+
+
+
